@@ -46,7 +46,7 @@ class Vendedor(Empleado):
         return self.sueldo_base + comision
 
 
-# --- SIMULACIÓN (Similar a tu función 'combate') ---
+# --- SIMULACIÓN
 
 def procesar_nomina(lista_empleados):
     print("=== REPORTE DE NÓMINA ===")
