@@ -15,7 +15,7 @@ class Empleado:
 
 
 # 2. HERENCIA
-# 'Desarrollador' hereda todo de 'Empleado' (no necesitamos reescribir nombre o sueldo_base).
+# 'Desarrollador' hereda todo de 'Empleado'.
 class Desarrollador(Empleado):
 
     def __init__(self, nombre, sueldo_base, horas_extra):
@@ -54,7 +54,6 @@ def procesar_nomina(lista_empleados):
     
     # Aquí vemos el Polimorfismo en acción:
     # Tratamos a todos como 'empleados', sin importar si son Vendedores o Desarrolladores.
-    # Python sabe automáticamente qué versión de 'calcular_sueldo' usar.
     for emp in lista_empleados:
         emp.mostrar_info()
         total_empresa += emp.calcular_sueldo()
