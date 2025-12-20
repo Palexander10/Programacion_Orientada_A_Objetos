@@ -27,6 +27,6 @@ class Asiento:
         """
         if not self.ocupado:
             self.ocupado = True
-            print(f"Asiento {self.numero} reservado con éxito.")
+            print(f"Asiento {self.numero} reservado correctamente.")
         else:
-            print(f"El asiento {self.numero} ya se encuentra ocupado.")
+            print(f"El asiento {self.numero} está ocupado.")

@@ -8,7 +8,7 @@ from avion import Avion
 from asiento import Asiento
 
 # Creación del objeto Avion
-mi_avion = Avion("Boeing 747")
+mi_avion = Avion("Aeroregional 123")
 
 # Creación de objetos Asiento
 asiento1 = Asiento("1A", "Ejecutiva")
