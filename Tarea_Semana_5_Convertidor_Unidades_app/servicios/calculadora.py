@@ -2,20 +2,23 @@
 from modelos.unidades import ConversorBase
 
 class GestorConversion:
+
     #Clase encargada de ejecutar la lógica de negocio.
-
+   
+    
     def procesar(self, objeto_conversion: ConversorBase) -> bool:
-    #POLIMORFISMO: Recibe un objeto de tipo ConversorBase (puede ser temperatura o longitud).
-
+      
+        #POLIMORFISMO: Recibe un objeto de tipo ConversorBase.
+       
         
-        # Tipo de dato: Float (obtenido del cálculo)
+        # 1. Obtenemos el resultado (float)
         resultado = objeto_conversion.convertir()
         
-        # Tipo de dato: String
+        # 2. Obtenemos el símbolo (string)
         simbolo = objeto_conversion.obtener_simbolo()
         
-        # Validación simple (Tipo de dato: Boolean)
-        exito = True if result is not None else False
+        # 3. Validación: Aquí estaba el error, usamos 'resultado'
+        exito = True if resultado is not None else False
 
         if exito:
             print(f"--> Resultado: {resultado} {simbolo}")
