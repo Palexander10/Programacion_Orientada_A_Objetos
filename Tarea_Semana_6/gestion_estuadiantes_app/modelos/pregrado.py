@@ -1,4 +1,4 @@
-from models.estudiante import Estudiante
+from modelos.estudiante import Estudiante
 
 # HERENCIA: Hereda de Estudiante
 class EstudiantePregrado(Estudiante):
